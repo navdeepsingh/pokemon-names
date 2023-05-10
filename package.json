@@ -1,0 +1,25 @@
+{
+  "name": "pokemons-names",
+  "version": "1.0.0",
+  "description": "Pokemon names",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [
+    "random",
+    "pokemons"
+  ],
+  "author": "Navdeep Singh <navdeep.er@gmail.com> (https://navdeepsingh.in/)",
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0"
+  }
+}
