@@ -1,10 +1,8 @@
-"use strict";
+import { pokemons } from "./index";
 
-const pokemons = require("./index");
-
-describe("Test pokemon utility", () => {
-  it("get all", () => {
-    expect(pokemons.all()).toEqual([
+describe("Pokemon names utility", () => {
+  it("should have list of all available names", () => {
+    expect(pokemons.all).toEqual([
       "bulbasaur",
       "ivysaur",
       "venusaur",
@@ -12,5 +10,10 @@ describe("Test pokemon utility", () => {
       "charmeleon",
       "charizard",
     ]);
+  });
+
+  it("should have list of random name", () => {
+    const random = pokemons.random();
+    expect(random).toEqual(random);
   });
 });

@@ -1,9 +1,9 @@
 import uniqueRandomArray from "unique-random-array";
-import { pokemons } from "./pokemons-names.js";
+import { pokemons as allNames } from "./pokemons-names.js";
 
-const results = {
-  all: pokemons,
-  random: uniqueRandomArray(pokemons),
+const pokemons = {
+  all: allNames,
+  random: uniqueRandomArray(allNames),
 };
 
-export { results };
+export { pokemons };
